@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <title>Tip calculator app - By Vanilla JS</title>
+</head>
+<body>
+    <div class="main flex">
+        <div class="logoMain"></div>
+        <div class="main-wrap">
+            <div class="cont-left">
+                <div class = "blocks">
+                    <p>Bill</p>
+                    <div class = "logoText">
+                        <div class="logo1"></div>
+                        <div><input class = "input" type="text" name="" id="billAmount" placeholder="0"></div>
+                    </div>
+                </div>
+                    
+                <div class = "blocks">
+                    <p>Number of People <span id="hiddenText">Can't be zero</span> </p>
+                    
+                    <div class = "logoText" id="noofPeopleMain">
+                        <div class="logo2"></div>
+                        <div><input class = "input" type="text" name="" id="noOfPeople"  placeholder="0"></div>
+                    </div>
+                </div>
+
+                <div class = "blocks">
+                    <p>Select Tip %</p>
+                    <div class="tips">
+                        <button class="tip-item" value="5">5%</button>
+                        <button class="tip-item" value="10">10%</button>
+                        <button class="tip-item" value="15">15%</button>
+                        <button class="tip-item" value="25">25%</button>
+                        <button class="tip-item" value="50">50%</button>
+                        <div><input class="tip-item" id="tip-item-custom" type="text" name=""  placeholder="Custom"></div>
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="cont-right">
+                <div>
+                    <div class = "rightText">
+                        <div class="rightItem">Tip Amount <br> <span class="person"> /person </span></div>
+                        <div contentEditable=true data-text="Enter text here" class="rightOutcome" id="rightOutcome1" aria-placeholder="$0.00">  </div>
+                    </div>
+                    <div class = "rightText">
+                        <div class="rightItem">Total <br> <span class="person"> /person </span></div>
+                        <div class="rightOutcome" id="rightOutcome2" aria-placeholder="$0.00">  </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="reset" onclick="resetFunc()">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="logic.js"></script>
+</html>

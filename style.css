@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 62.5%;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.main {
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.logoMain{
+    height: 100px;
+    width: 100px;
+    background-image: url(./images/logo.svg);
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+.main-wrap{
+    display: flex;
+    flex-direction: row;
+    max-width: 60rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 2.4rem;
+}
+
+.cont-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    padding: 1rem 2rem 1rem 1rem;
+    font-family: 'Space Mono', monospace;
+}
+
+.blocks{
+    margin-bottom: 1rem;
+}
+
+.logoText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    background-color: hsl(189, 41%, 97%);
+    height: 2.8rem;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+.logoText:hover{
+    border: 2px solid hsl(169, 97%, 36%) ;
+}
+
+.logo1{
+    background-image: url(./images/icon-dollar.svg);
+    background-position: center;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+
+.logo2{
+    background-image: url(./images/icon-person.svg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: auto;
+}
+
+.logoText > :nth-child(1){
+    width: 10%;
+}
+
+.logoText > :nth-child(2){
+    width: 85%;
+}
+
+#hiddenText{
+    display: none;
+    float: right;
+    color: red;
+}
+
+.input{
+    border: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(186, 14%, 43%);
+    text-align: end;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Space Mono', monospace;
+}
+
+.tips{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.tip-item {
+    border: none;
+    color: hsl(189, 41%, 97%);
+    background-color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    height: 2.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+}
+
+.tip-item:hover{
+    color: hsl(183, 100%, 15%);
+    background-color:hsl(185, 41%, 84%);
+}
+.tip-item:focus{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+#tip-item-custom{
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+    height: 2.4rem;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+}
+
+#tip-item-custom:hover{
+    border: 2px solid hsl(169, 97%, 36%) ;
+}
+
+.cont-right{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 4rem 2rem 3rem 2rem;
+    color: white;
+    justify-content: space-between;
+}
+
+.rightText{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.person{
+    color: hsl(184, 14%, 56%);
+    font-size: 1rem;
+}
+
+.rightOutcome{
+    font-weight: 700;
+    height: 100%;
+    font-size: 2.4rem;
+    color: hsl(172, 67%, 45%);
+}
+
+.reset{
+    border: 0px;
+    border-radius: 4px;
+    height: 3rem;
+    width: 100%;
+    background-color: hsl(172, 67%, 45%);
+    font-family: 'Space Mono', monospace;
+}
+
+.reset:hover{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(185, 41%, 84%);
+}
+
+.reset:focus{
+    background-color: hsl(185, 100%, 5%);
+    color: hsl(185, 41%, 84%);
+}
+
+
+@media screen and (max-width: 450px) {
+
+.main-wrap{
+    flex-direction: column;
+    max-width: 40rem;
+}
+
+.tips{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+
+  }
